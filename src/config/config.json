@@ -1,0 +1,7 @@
+{
+  "guildId": "YOUR_SERVER_ID",
+  "verificationChannelId": "YOUR_VERIFICATION_CHANNEL_ID",
+  "verifiedRoleId": "YOUR_VERIFIED_ROLE_ID",
+  "logChannelId": "YOUR_LOG_CHANNEL_ID",
+  "welcomeChannelId": "YOUR_WELCOME_CHANNEL_ID"
+}

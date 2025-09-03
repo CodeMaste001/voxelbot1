@@ -1,0 +1,19 @@
+{
+  "anuncio": ["Administrator", "ManageRoles"],
+  "subanuncio": ["Administrator", "ManageRoles"],
+  "ban": ["Administrator"],
+  "kick": ["Administrator"],
+  "mute": ["Administrator"],
+  "clear": ["Administrator"],
+  "destacar-arte": ["Administrator", "ManageMessages"],
+  "agregarnivel": ["Administrator"],
+  "agregarxp": ["Administrator"],
+  "agregarprestigio": ["Administrator"],
+  "nivel": [],
+  "ranking": [],
+  "trivia": [],
+  "dado": [],
+  "meme": [],
+  "sonik-info": [],
+  "sonik-radio": []
+}

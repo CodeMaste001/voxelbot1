@@ -1,0 +1,16 @@
+{
+  "name": "voxelbot",
+  "version": "1.0.0",
+  "description": "Bot oficial de Voxel Verse Network & Sonik",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Voxel Verse Network",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
