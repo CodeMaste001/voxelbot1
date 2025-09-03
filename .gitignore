@@ -4,8 +4,7 @@
 # Environment Variables
 .env
 
-# Spotify Tokens
-spotify-tokens.json
+
 
 # Production
 npm-debug.log*
