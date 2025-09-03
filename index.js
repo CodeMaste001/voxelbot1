@@ -65,11 +65,7 @@ async function sendErrorToOwner(error) {
   try {
     const owner = await client.users.fetch(ownerId);
     if (owner) {
-      await owner.send(`:warning: Se produjo un error en el bot:\n\
-\
-`${error.stack || error}\
-\
-`);
+      await owner.send(`:warning: Se produjo un error en el bot:\n\`\`\`${error.stack || error}\`\`\``);
     }
   } catch (err) {
     console.error('No se pudo enviar el error al propietario:', err);
