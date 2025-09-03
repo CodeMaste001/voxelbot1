@@ -59,6 +59,31 @@ function loadEvents(dir) {
 loadCommands(path.join(__dirname, 'src', 'commands'));
 loadEvents(path.join(__dirname, 'src', 'events'));
 
+const ownerId = '1212135719523328011';
 
+async function sendErrorToOwner(error) {
+  try {
+    const owner = await client.users.fetch(ownerId);
+    if (owner) {
+      await owner.send(`:warning: Se produjo un error en el bot:\n\
+\
+`${error.stack || error}\
+\
+`);
+    }
+  } catch (err) {
+    console.error('No se pudo enviar el error al propietario:', err);
+  }
+}
+
+process.on('unhandledRejection', error => {
+  console.error('Unhandled Rejection:', error);
+  sendErrorToOwner(error);
+});
+
+process.on('uncaughtException', error => {
+  console.error('Uncaught Exception:', error);
+  sendErrorToOwner(error);
+});
 
 client.login(process.env.DISCORD_TOKEN);
